@@ -1,23 +1,34 @@
-import Link from "next/link";
+import Header from "@/components/Header";
 
 export default function Home() {
     return (
         <main>
-            <header className="bg-white border-b flex justify-between p-4">
-                <div className="flex gap-8">
-                    <Link href={"/"}>LinksApp</Link>
-                    <nav className="flex items-center gap-4 text-slate-500 text-sm">
-                        <Link href={"/about"}>About</Link>
-                        <Link href={"/pricing"}>Pricing</Link>
-                        <Link href={"/contact"}>Contact</Link>
-                    </nav>
+            <Header />
+            <section className="p-4 pt-32 max-w-4xl mx-auto">
+                <div className="max-w-md mb-6">
+                    <h1 className="text-6xl font-bold">
+                        Your one link <br /> for everything
+                    </h1>
+                    <h2 className="text-slate-500 text-xl mt-6">
+                        Share your links, social profiles, contact info and more
+                        on one page
+                    </h2>
                 </div>
-                <nav className="flex gap-4 text-sm text-slate-500">
-                    <Link href={"/login"}>Sign In</Link>
-                    <Link href={"/register"}>Create Account</Link>
-                </nav>
-            </header>
-            <section></section>
+                <form className="inline-flex items-center shadow-lg shadow-gray-700/20">
+                    <span className="bg-white pl-4 py-4">linksapp.com/</span>
+                    <input
+                        type="text"
+                        placeholder="username"
+                        className="py-4"
+                    />
+                    <button
+                        type="submit"
+                        className="bg-blue-500 text-white py-4 px-6"
+                    >
+                        Join for Free
+                    </button>
+                </form>
+            </section>
         </main>
     );
 }
