@@ -1,3 +1,5 @@
+import HeroForm from "@/components/ui/forms/HeroForm";
+
 export default function Home() {
     return (
         <main>
@@ -11,20 +13,7 @@ export default function Home() {
                         on one page
                     </h2>
                 </div>
-                <form className="inline-flex items-center shadow-lg shadow-gray-700/20">
-                    <span className="bg-white pl-4 py-4">linksapp.com/</span>
-                    <input
-                        type="text"
-                        placeholder="username"
-                        className="py-4"
-                    />
-                    <button
-                        type="submit"
-                        className="bg-blue-500 text-white py-4 px-6"
-                    >
-                        Join for Free
-                    </button>
-                </form>
+                <HeroForm />
             </section>
         </main>
     );

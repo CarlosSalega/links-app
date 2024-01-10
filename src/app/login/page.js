@@ -1,4 +1,4 @@
-import LoginWithGoogle from "@/components/ui/LoginwithGoogle";
+import LoginWithGoogle from "@/components/ui/buttons/LoginWithGoogle";
 
 export default function LoginPage() {
     return (
